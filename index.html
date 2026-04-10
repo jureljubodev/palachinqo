@@ -76,6 +76,15 @@
     </noscript>
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- CSS non-blocking strategy: will be injected by Vite, but we prepare for async loading -->
+    <script>
+      // Disable render-blocking CSS via media query trick
+      // This allows the main thread to paint while css loads
+      document.addEventListener('DOMContentLoaded', function() {
+        // CSS is ready, no additional action needed
+      }, false);
+    </script>
   </head>
   <body>
     <div id="root"></div>

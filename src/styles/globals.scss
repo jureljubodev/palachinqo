@@ -324,9 +324,7 @@ footer {
 
 /* Page fade-in */
 .page-content {
-  opacity: 0;
-  animation: pageFadeIn 0.7s ease forwards;
-  animation-delay: 0.4s;
+  opacity: 1;
 }
 
 @keyframes pageFadeIn {

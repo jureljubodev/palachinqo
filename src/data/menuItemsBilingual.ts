@@ -16,7 +16,8 @@ import janaImg from "../assets/img/jana.avif";
 import chocolateMilkImg from "../assets/img/cokmlijeko.avif";
 import milkImg from "../assets/img/mlijekoo.avif";
 import slanaSlika from "../assets/img/slaneSlike.jpg";
-import slanaSlika2 from "../assets/img/slaneAkcija.png";
+import slanaSlika2 from "../assets/img/slaneAkcija.jpeg";
+// import slanaSlika2Mobile from "../assets/img/slaneAkcija-mobile.jpeg"; // Used for responsive images in MenuPage
 
 
 export const menuItems: Record<

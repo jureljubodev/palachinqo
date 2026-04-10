@@ -3,6 +3,7 @@ import { ExternalLink, GlassWater } from "lucide-react";
 import "../styles/MenuSection.scss";
 import { useTranslation } from "react-i18next";
 import slatkeSlika from "../assets/img/slatke.jpeg";
+import slatkeSlikaMobile from "../assets/img/slatke-mobile.jpeg";
 
 type MenuItem = {
   title: string;
@@ -36,7 +37,15 @@ export default function MenuSection() {
             <Link key={index} to={item.link} className="menu-item">
               <div className="aspect-ratio">
                 {item.type === "image" ? (
-                  <img className="bottleImg" src={item.image} alt={item.title} />
+                  <img
+                    className="bottleImg"
+                    src={item.image}
+                    srcSet={`${slatkeSlikaMobile} 500w, ${slatkeSlika} 800w`}
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                    alt={item.title}
+                    loading="lazy"
+                    decoding="async"
+                  />
                 ) : (
                   <div className="drinks-bg">
                     <GlassWater size={64} strokeWidth={1.2} className="drinks-icon" />
