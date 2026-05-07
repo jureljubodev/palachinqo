@@ -311,7 +311,7 @@ const resources = {
         days: "Tue–Sun",
         hours: "15:00 - 23:00",
         taste: "Salty in the morning, sweet in the evening.",
-        closedSunday: "We are closed on Sundays",
+        closedSunday: "We are closed on Mondays",
       },
       contact: {
         title: "Contact",
